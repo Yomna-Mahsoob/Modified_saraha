@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>viewReceivedMessages</class>
+ <widget class="QDialog" name="viewReceivedMessages">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>939</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-20</y>
+     <width>971</width>
+     <height>1011</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 1,
+        stop: 0 #d5f5e3,
+        stop: 1 #d6eaf8
+    );
+    margin: 0; 
+    padding: 0;
+}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>-20</y>
+      <width>321</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 38pt &quot;Sylfaen&quot;;
+    color: #34495e;
+    border-radius: 10px;
+    padding: 12px;
+    padding-top: 48px;
+    margin-top:20px;
+    font-size: 30px;
+   
+}</string>
+    </property>
+    <property name="text">
+     <string>Received Messages</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>150</y>
+      <width>86</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>280</y>
+      <width>621</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>619</width>
+       <height>489</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>790</y>
+      <width>432</width>
+      <height>156</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    margin-bottom:100px;
+	font: 18pt &quot;NSimSun&quot;;
+    min-width: 400px;
+    min-height: 40px;
+    
+}
+
+QPushButton:hover {
+    background-color: #27ae60;
+}
+
+QPushButton:pressed {
+    background-color: #1e8449;
+}</string>
+    </property>
+    <property name="text">
+     <string>Back To Main window</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>151</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    margin-bottom:50px;
+	font: 18pt &quot;NSimSun&quot;;
+    width: 90px;
+    height: 20px;
+    
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c5980;
+}</string>
+    </property>
+    <property name="text">
+     <string>View</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>scrollArea</zorder>
+   <zorder>back</zorder>
+   <zorder>view</zorder>
+   <zorder>comboBox</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

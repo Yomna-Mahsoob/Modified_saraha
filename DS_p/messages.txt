@@ -1,0 +1,16 @@
+8,1,2,hi eman you are beautiful,2025-05-22 16:53:06,0,0
+9,1,2,this msg is sent by by nickname,2025-05-22 16:53:41,0,1
+11,1,3,hello this msg sent by my id,2025-05-22 16:55:03,0,0
+12,1,4,welcome salma,2025-05-22 16:55:22,0,0
+13,1,6,hi yamona,2025-05-22 16:55:31,0,0
+14,1,5,متنسيش معاد المناقشة,2025-05-22 16:55:59,0,1
+17,6,4,hello salma,2025-05-22 16:58:00,0,0
+18,6,2,eman my nickname yamona,2025-05-22 16:58:22,0,1
+21,5,6,welcomeee,2025-05-22 17:06:45,0,0
+23,7,5,hiii,2025-05-22 17:14:15,0,0
+19,4,1,welcome arwa i will added to your contacts,2025-05-22 16:59:36,0,0
+22,7,1,enty gamila,2025-05-22 17:14:04,0,0
+20,5,1,hello arwa,2025-05-22 17:06:29,0,0
+16,6,1,hello arwa,2025-05-22 16:57:52,0,0
+25,7,1,your name is beautiful,2025-05-22 17:16:04,1,1
+24,7,1,my nicknam is safoaa,2025-05-22 17:15:42,0,1

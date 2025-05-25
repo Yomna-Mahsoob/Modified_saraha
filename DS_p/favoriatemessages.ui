@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>favoriateMessages</class>
+ <widget class="QDialog" name="favoriateMessages">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>921</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>0</y>
+     <width>941</width>
+     <height>921</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 1,
+        stop: 0 #d5f5e3,
+        stop: 1 #d6eaf8
+    );
+    margin: 0; 
+    padding: 0;
+}
+</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>-50</y>
+      <width>331</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 38pt &quot;Sylfaen&quot;;
+    color: #34495e;
+    border-radius: 10px;
+    padding: 12px;
+    padding-top: 48px;
+    margin-top:20px;
+    font-size: 30px;
+   
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Favoriate Messages</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>150</y>
+      <width>581</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QScrollArea{
+    min-width: 500px;
+    max-width: 700px;
+    heigth:500px;
+    border-radius: 5px;
+     border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>569</width>
+       <height>429</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="removeOLdestFav">
+    <property name="geometry">
+     <rect>
+      <x>201</x>
+      <y>640</y>
+      <width>421</width>
+      <height>156</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    margin-bottom:100px;
+	font: 18pt &quot;NSimSun&quot;;
+    min-width: 300px;
+    min-height: 40px;
+    
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c5980;
+}</string>
+    </property>
+    <property name="text">
+     <string>Remove Oldest Favoriate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>730</y>
+      <width>432</width>
+      <height>156</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    margin-bottom:100px;
+	font: 18pt &quot;NSimSun&quot;;
+    min-width: 400px;
+    min-height: 40px;
+    
+}
+
+QPushButton:hover {
+    background-color: #27ae60;
+}
+
+QPushButton:pressed {
+    background-color: #1e8449;
+}</string>
+    </property>
+    <property name="text">
+     <string>Back To Main Window</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

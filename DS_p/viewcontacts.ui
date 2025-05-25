@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewContacts</class>
+ <widget class="QWidget" name="ViewContacts">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>923</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 1,
+        stop: 0 #d5f5e3,
+        stop: 1 #d6eaf8
+    );
+    margin: 0; 
+    padding: 0;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>850</width>
+     <height>941</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 1,
+        stop: 0 #d5f5e3,
+        stop: 1 #d6eaf8
+    );
+    margin: 0; 
+    padding: 0;
+}
+</string>
+   </property>
+   <widget class="QListWidget" name="contactList">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>641</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>780</y>
+      <width>432</width>
+      <height>156</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font: bold 18pt &quot;NSimSun&quot;;  /* &lt;-- This line is updated */
+    margin-bottom: 100px;
+    min-width: 400px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #27ae60;
+}
+
+QPushButton:pressed {
+    background-color: #1e8449;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back to main window</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Contacts">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>-70</y>
+      <width>221</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 38pt &quot;Sylfaen&quot;;
+    color: #34495e;
+    border-radius: 10px;
+    padding: 12px;
+    padding-top: 48px;
+    margin-top:20px;
+    font-size: 30px;
+   
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Your Contacts</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>550</y>
+      <width>621</width>
+      <height>196</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="searchContactButton">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>73</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 10px;  /* Smaller padding */
+    font: 14pt &quot;NSimSun&quot;;  /* Smaller font */
+    font-weight: bold;
+    min-width: 120px;   /* Smaller min width */
+    min-height: 45px;   /* Smaller min height */
+    margin-bottom: 20px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c5980;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Search Contacts</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="searchContactInput">
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit {
+    min-width: 200px;
+    max-width: 300px;
+    heigth:55px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+QLineEdit::placeholder {
+    color: #888;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Enter a Contact to Search:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="removeContactButton">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>73</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 10px;  /* Smaller padding */
+    font: 14pt &quot;NSimSun&quot;;  /* Smaller font */
+    font-weight: bold;
+    min-width: 120px;   /* Smaller min width */
+    min-height: 45px;   /* Smaller min height */
+    margin-bottom: 20px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c5980;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Remove Contact</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="removeContactInput">
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit {
+    min-width: 200px;
+    max-width: 300px;
+    heigth:55px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+QLineEdit::placeholder {
+    color: #888;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Enter a Contact to Remove:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>back</zorder>
+   <zorder>Contacts</zorder>
+   <zorder>contactList</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
