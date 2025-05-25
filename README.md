@@ -5,7 +5,8 @@ A C++ implementation of a privacy-first messaging platform — reimagining Sarah
     ✅ Built for a university Data Structures course
     💻 Developed in C++ 
 
-🔐 Key Features
+# 🔐 Key Features
+
 👤 User Registration & Login
 
     Ensures unique usernames
