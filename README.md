@@ -61,7 +61,7 @@ stack	Undo last message actions
 
     Language: C++
 
-    IDE: Visual Studio
+    IDE: Qt Creator 
 
     Standard Library: STL (C++ Standard Template Library)
 
